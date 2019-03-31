@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>GAIWM官网</title>
+<link rel="stylesheet" href="css/css.css" />
+<link rel="stylesheet" href="css/css.css" />
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/language.js"></script>
+
+</head>
+<body style="background:url('images/loginBg.jpg') no-repeat; background-size:cover; height: 100%;">
+  <header>
+      <a href="index.html" class="logo"><img src="images\logo.png" alt="" height="100"></a>
+      <span class="menu_list"><i class="iconfont">&#xe63f;</i></span>
+    <span id="toEnglish" class="active">English</span>
+    <span id="toChinese" >中文</a></span>
+  
+    
+</header>
+<nav>
+      
+    <ul>
+      <li><a href="index.html#about">About GAIWM</a></li>
+      <li><a href="index.html#renzhen">Certification System</a></li>
+      <li><a href="news_list.html">News</a></li>
+      <li><a href="index.html">Query entry</a></li>
+      <li><a href="about_test.html">About Test</a></li>
+      <li><a href="center.html">Personal center</a></li>
+    </ul>
+  </nav>
+
+
+
+<div class="container" style="position: relative;">
+<div class="login-page">
+<div id="login_form" class="form">
+<div class="register-form">
+  <input type="text" placeholder="username" id="r_user_name"/>
+  <input type="password" placeholder="password" id="r_password" />
+  <input type="password" placeholder="confirm password" id="r_emial"/>
+  <input type="text" placeholder="phone" id="mobile"/>
+  <input type="text" placeholder="nmail" id="mail"/>
+  <button id="create" class="btn">create Account</button>
+  <p class="message">Already have an account? <a href="javascript:" class="toLogin">Login</a></p>
+ </div>
+ <div class="login-form">
+  <input type="text" placeholder="username" id="user_name"/>
+  <input type="password" placeholder="password" id="password"/>
+  <button id="login" class="btn">Login</button>
+  <p class="message">No account yet? <a href="javascript:" class="toRegister">Create now</a></p>
+ </div>
+</div>
+</div>
+
+</div>
+<script>
+  $('#login').click(function(){
+    if($('#user_name').val()==''){
+      alert('Username can not be empty')
+      return false
+    }
+    if($('#password').val()==''){
+      alert('password can not be blank')
+      return false
+    }
+  })
+
+
+  $('#create').click(function(){
+    if($('#r_user_name').val()==''){
+      alert('Username can not be empty')
+      return false
+    }
+    if($('#r_password').val()==''){
+      alert('password can not be blank')
+      return false
+    }
+    if($('#r_emial').val()==''){
+      alert('confirm password can not be blank')
+      return false
+    }
+    if($('#r_emial').val()!=$('#r_password').val()){
+      alert('Confirm password must be consistent')
+      return false
+    }
+    if($('#mobile').val()==''){
+      alert('Phone number cannot be empty')
+      return false
+    }
+    if($('#mail').val()==''){
+      alert('E-mail can not be empty')
+      return false
+    }
+   
+  })
+
+</script>
+</body>
+</html>
