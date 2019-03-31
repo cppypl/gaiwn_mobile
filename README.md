@@ -1,6 +1,4 @@
 # gaiwn_mobile
-gaiwm手机版
-
 
 #gaiwn_mobile_cn是中文版
 
