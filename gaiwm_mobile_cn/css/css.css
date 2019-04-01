@@ -74,7 +74,7 @@
 
 
 
-*{ margin: 0; padding: 0; box-sizing: border-box; font-size: .6rem}
+*{ margin: 0; padding: 0; box-sizing: border-box; font-size: .6rem; font-family: Arial}
 html,body{height: 100%;}
   .iconfont{
     font-family:"iconfont" !important;
