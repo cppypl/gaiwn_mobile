@@ -106,7 +106,7 @@ nav ul li{ float: left; padding:  0 20px; height: 100%; font-size: .6rem}
   nav ul li a{display: block; height: 100%; width: 100%;color: #fff}
   .banner{min-height: 8rem; padding-top: 2rem;    background-size: 100% 100%;}
   .container{ width: 100%;}
-  .indexUl{ padding:1rem 0; width: 100%; display: inherit; overflow: hidden; background: #e0c246}
+  .indexUl{ padding:1rem 0; width: 100%; display: inherit; overflow: hidden; background: #e0c246; position: relative;}
   .indexUl li{width:33%;  float: left; text-align: center; }
   .indexUl li .img{ width: 2rem; height: 2rem; display: block; margin: 0 auto;}
   .indexUl li:nth-of-type(1) .img{  background: url(../images/icon_02.png) no-repeat; background-size: contain}
