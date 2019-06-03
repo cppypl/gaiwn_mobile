@@ -36,6 +36,35 @@ $(function(){
         $('.index_tab li').eq(index).show().siblings().hide()
         
     })
+
+    $('.getCode').click(function(){
+        let num = 60;
+        console.log($(this).text()=='获取验证码')
+        console.log($(this).text())
+        if($(this).text()=='获取验证码'){
+            alert('已向您发送验证码，请注意查收。')
+            this.timer=setInterval(()=>{
+                if(num>0){
+                    $(this).text(num+'s')
+                    num--
+                    
+                }else{
+                    num=60;
+                    clearInterval(this.timer)
+                    $(this).text('获取验证码')
+                }
+               
+            },1000)
+        }
+        
+    })
+    $('.register-form li').click(function(){
+        let index = $('.register-form li').index(this);
+        $(this).addClass('active').siblings().removeClass('active')
+        $('.register-form .tabType').eq(index).show().siblings('.tabType').hide()
+        
+
+    })
 });
 
 

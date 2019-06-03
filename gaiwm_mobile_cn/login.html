@@ -37,19 +37,30 @@
 <div class="login-page">
 <div id="login_form" class="form">
 <div class="register-form">
+    <ul>
+        <li class="active">通过手机找回</li>
+        <li class="">通过邮箱找回</li>
+      </ul>
   <input type="text" placeholder="用户名" id="r_user_name"/>
-  <input type="password" placeholder="密码" id="r_password" />
-  <input type="password" placeholder="确认密码" id="r_emial"/>
-  <input type="text" placeholder="手机号" id="mobile"/>
-  <input type="text" placeholder="邮箱" id="mail"/>
-  <button id="create" class="btn">创建账户</button>
-  <p class="message">已经有了一个账户? <a href="javascript:" class="toLogin">立刻登录</a></p>
+  <div class="tabType" style="display: block;">
+      <input type="text" placeholder="请输入您的手机号">
+      <span class="getCode">获取验证码</span>
+    </div>
+
+    <div class="tabType" style="display: none;">
+        <input type="text" placeholder="请输入您的邮箱">
+        <span class="getCode">获取验证码</span>
+      </div>
+  <input type="text" placeholder="请输入验证码" id="mobile"/>
+  <input type="text" placeholder="请输入新密码" id="mail"/>
+  <button id="create" class="btn">确认</button>
  </div>
  <div class="login-form">
-  <input type="text" placeholder="用户名" id="user_name"/>
-  <input type="password" placeholder="密码" id="password"/>
+  
+  <input type="text" placeholder="请输入身份证号" id="user_name"/>
+  <input type="password" placeholder="请输入密码" id="password"/>
   <button id="login" class="btn">登　录</button>
-  <p class="message">还没有账户? <a href="javascript:" class="toRegister">立刻创建</a></p>
+  <p class="message"><a href="javascript:" class="toRegister">忘记密码</a></p>
  </div>
 </div>
 </div>

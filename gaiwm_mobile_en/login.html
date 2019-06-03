@@ -24,11 +24,11 @@
       
     <ul>
       <li><a href="index.html#about">About GAIWM</a></li>
-      <li><a href="index.html#renzhen">Certification System</a></li>
+      <li><a href="index.html#renzhen">Certification</a></li>
       <li><a href="news_list.html">News</a></li>
-      <li><a href="index.html">Query entry</a></li>
+      <li><a href="index.html">Query Entrance</a></li>
       <li><a href="about_test.html">About Test</a></li>
-      <li><a href="center.html">Personal center</a></li>
+      <li><a href="center.html">Personal Center</a></li>
     </ul>
   </nav>
 
@@ -38,19 +38,29 @@
 <div class="login-page">
 <div id="login_form" class="form">
 <div class="register-form">
-  <input type="text" placeholder="username" id="r_user_name"/>
-  <input type="password" placeholder="password" id="r_password" />
-  <input type="password" placeholder="confirm password" id="r_emial"/>
-  <input type="text" placeholder="phone" id="mobile"/>
-  <input type="text" placeholder="nmail" id="mail"/>
-  <button id="create" class="btn">create Account</button>
-  <p class="message">Already have an account? <a href="javascript:" class="toLogin">Login</a></p>
+  <ul>
+    <li class="active">By phone</li>
+    <li class="">By e-mail</li>
+  </ul>
+<input type="text" placeholder="Username" id="r_user_name"/>
+<div class="tabType" style="display: block;">
+  <input type="text" placeholder="Phone number">
+  <span class="getCode">Send verification code</span>
+</div>
+
+<div class="tabType" style="display: none;">
+    <input type="text" placeholder="E-mail">
+    <span class="getCode">Send verification code</span>
+  </div>
+  <input type="text" placeholder="Enter verification code" id="mobile"/>
+  <input type="text" placeholder="Enter new password" id="mail"/>
+  <button id="create" class="btn">Submit</button>
  </div>
  <div class="login-form">
-  <input type="text" placeholder="username" id="user_name"/>
-  <input type="password" placeholder="password" id="password"/>
+  <input type="text" placeholder="ID Number" id="user_name"/>
+  <input type="password" placeholder="Password" id="password"/>
   <button id="login" class="btn">Login</button>
-  <p class="message">No account yet? <a href="javascript:" class="toRegister">Create now</a></p>
+  <p class="message"><a href="javascript:" class="toRegister">Forgot password</a></p>
  </div>
 </div>
 </div>
